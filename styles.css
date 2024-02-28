@@ -1,0 +1,100 @@
+:root {
+  --background-color1: white;
+  --background-color2: #003039;
+  --background-color3: grey;
+  --title-color1: #e6eaf0;
+
+}
+* { 
+  scroll-behavior: smooth;
+  padding:0%;
+  margin: 0%;
+  text-decoration: none;
+}
+.title {
+  text-align: center;
+  color: #003039;
+  font-family: Helvetica;
+  font-size: 20px;
+}
+body{
+  position: relative;
+  background: var(--background-color1);
+  width: 100vw;
+  height: auto;
+  font-size: 20px;
+}
+.main-section {
+  position: relative;
+  left: 33vw;
+  top: 10px;
+  padding: 20px;
+  width: 65vw;
+  bottom: 50px;
+}
+#navbar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  left: 5px;
+  width: 20vw;
+  height: 100vh;
+  top: 0;
+  overflow-y: scroll;
+  background-color: var(--background-color2);
+  color: var(--title-color1);
+}
+#navbar header {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.nav-link {
+  color: var(--title-color1)
+}
+.main-section header {
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--background-color2);
+}
+.main-section a {
+  color: green;
+}
+a:hover {
+  background-color: var(--background-color3)
+}
+@media (max-width: 600px){
+  #navbar {
+    position: relative;
+    height: auto;
+    width: 80vw;
+    background-color: inherit;
+    overflow: hidden;
+  }
+  .title {
+    position: relative;
+    color: var(--title-color1);
+    background: var(--background-color2);
+    width: 100vw;
+    padding: 2px;
+    font-size: 20px;
+    top: 2px;
+  }
+  .table {
+    color: black;
+  }
+  #navbar ul li a {
+    color: green;
+  }
+  .main-section {
+    position: relative;
+    left: 30px;
+    width: 80vw;
+  }
+  .nav-items a {
+    font-size: 0.85rem;
+    padding: 2px;
+  }
+}
