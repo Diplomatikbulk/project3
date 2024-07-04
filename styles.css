@@ -1,6 +1,9 @@
+/*Proverbs 9:10
+ The fear of God is the beginning of wisdom.
+*/
 :root {
   --background-color1: white;
-  --background-color2: #003039;
+  --background-color2: #16284b;
   --background-color3: grey;
   --title-color1: #e6eaf0;
 
@@ -11,43 +14,52 @@
   margin: 0%;
   text-decoration: none;
 }
+body {
+  overflow-x: hidden;
+}
 .title {
   text-align: center;
-  color: #003039;
+  color: var(--background-color2);
   font-family: Helvetica;
-  font-size: 20px;
+  font-size: 40px;
 }
 body{
   position: relative;
   background: var(--background-color1);
   width: 100vw;
   height: auto;
-  font-size: 20px;
+  font-size: 1rem;
+  font-family: Cambria, Helvetica;
 }
 .main-section {
   position: relative;
-  left: 33vw;
+  left: 30vw;
   top: 10px;
   padding: 20px;
-  width: 65vw;
+  width: 60vw;
   bottom: 50px;
 }
 #navbar {
   position: fixed;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 20px;
-  left: 5px;
   width: 20vw;
   height: 100vh;
   top: 0;
-  overflow-y: scroll;
   background-color: var(--background-color2);
   color: var(--title-color1);
 }
 #navbar header {
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
   text-transform: uppercase;
   font-weight: bold;
+}
+.navs {
+  margin: 0 auto;
 }
 .nav-link {
   color: var(--title-color1)
@@ -63,30 +75,35 @@ body{
   color: green;
 }
 a:hover {
-  background-color: var(--background-color3)
+  color: var(--background-color3)
 }
-@media (max-width: 600px){
+@media (min-width: 611px) {
+  .title {
+  margin-left: 25vw;
+  }
+}
+@media (max-width: 610px) {
   #navbar {
     position: relative;
     height: auto;
-    width: 80vw;
+    width: 100vw;
     background-color: inherit;
-    overflow: hidden;
+
   }
   .title {
     position: relative;
-    color: var(--title-color1);
-    background: var(--background-color2);
     width: 100vw;
     padding: 2px;
-    font-size: 20px;
     top: 2px;
   }
   .table {
     color: black;
   }
   #navbar ul li a {
-    color: green;
+    color: var(--background-color2);
+  }
+  #navbar ul li a:hover {
+    color: var(--background-color3);
   }
   .main-section {
     position: relative;
